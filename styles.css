@@ -1,0 +1,63 @@
+/* Custom styles complementing TailwindCSS */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom animations */
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Additional styles for new sections */
+#home button {
+    transition: transform 0.3s ease;
+}
+
+#home button:hover {
+    transform: scale(1.05);
+}
+
+#testimonials .bg-white {
+    transition: box-shadow 0.3s ease;
+}
+
+#testimonials .bg-white:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+#statistics h3 {
+    transition: color 0.3s ease;
+}
+
+#statistics h3:hover {
+    color: #333;
+}
+
+#home h1, #home p {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+} 
